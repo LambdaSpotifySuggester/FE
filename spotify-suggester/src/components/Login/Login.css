@@ -1,16 +1,21 @@
-.song-suggester-signup {
+.song-suggester-login {
   width: 450px;
   display: flex;
   flex-direction: column;
 }
 
-.song-suggester-signup input {
+.login > .container {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.song-suggester-login input {
   font-size: 14px;
   padding: 15px;
   margin-bottom: 20px;
 }
 
-.song-suggester-signup button {
+.song-suggester-login button {
   color: #ffffff;
   width: 100%;
   padding: 15px;
@@ -23,17 +28,12 @@
   margin-bottom: 20px;
 }
 
-.song-suggester-signup-h2 {
+.song-suggester-login-h2 {
   margin-bottom: 20px;
   font-size: 32px;
 }
 
-.signup > .container {
-  margin-top: 20px;
-  align-items: center;
-}
-
-.login-account-link {
+.create-account-link {
   text-decoration: none;
   color: #92c959;
 }
