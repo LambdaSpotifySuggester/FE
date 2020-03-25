@@ -9,11 +9,8 @@ app.disable("x-powered-by");
 // serve static files
 app.use(express.static("build"));
 
-// Parse incoming post request
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-
-app.get("/", function(req, res) {
+// Handles any requests
+app.get("*", function(req, res) {
   res.sendFile(path.join(__dirname, "build", "index.html"));
 });
 
