@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./SignUp.css";
+import "./Login.css";
 
-function SignUp() {
+function Login() {
   const [user, setUser] = useState({
     email: "",
     password: ""
@@ -13,10 +13,10 @@ function SignUp() {
   }
 
   return (
-    <section className="signup">
+    <section className="login">
       <div className="container">
-        <h2 className="song-suggester-signup-h2">Create An Account</h2>
-        <form className="song-suggester-signup">
+        <h2 className="song-suggester-login-h2">Log In</h2>
+        <form className="song-suggester-login">
           <input
             value={user.email}
             name="email"
@@ -31,13 +31,12 @@ function SignUp() {
             placeholder="Enter Password"
             onChange={onInputChange}
           />
-          <button>Sign Up</button>
+          <button>Log In</button>
         </form>
-        <Link></Link>
         <p>
-          Already have an account?{" "}
-          <Link className="login-account-link" to="/login">
-            Log in
+          Don't have an account?{" "}
+          <Link className="create-account-link" to="/signup">
+            Sign up
           </Link>
         </p>
       </div>
@@ -45,4 +44,4 @@ function SignUp() {
   );
 }
 
-export default SignUp;
+export default Login;
