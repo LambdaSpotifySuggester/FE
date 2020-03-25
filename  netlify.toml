@@ -1,0 +1,4 @@
+[build]
+base = "spotify-suggester/"
+publish = "spotify-suggester/build/"
+command = "npm run build"
