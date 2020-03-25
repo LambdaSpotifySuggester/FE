@@ -36,7 +36,7 @@ function SignUp() {
         <Link></Link>
         <p>
           Already have an account?{" "}
-          <Link className="login-account-link" to="/login">
+          <Link to="/login" className="login-account-link">
             Log in
           </Link>
         </p>

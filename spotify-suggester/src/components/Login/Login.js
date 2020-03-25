@@ -35,7 +35,7 @@ function Login() {
         </form>
         <p>
           Don't have an account?{" "}
-          <Link className="create-account-link" to="/signup">
+          <Link to="/signup" className="create-account-link">
             Sign up
           </Link>
         </p>
