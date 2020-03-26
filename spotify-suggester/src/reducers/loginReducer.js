@@ -1,31 +1,35 @@
-import { SIGNUP_START, SIGNUP_SUCCESS, SIGNUP_ERROR } from '../actions/signUpActions';
+import { 
+    LOGIN_START, 
+    LOGIN_SUCCESS, 
+    LOGIN_ERROR 
+} from '../actions/loginActions';
 
 const initialState = {
-    newUser: {},
+    user: {},
     isLoading: false,
     error: null
-}
+};
 
-export function signUpReducer(state = initialState, action) {
+export function loginReducer(state = initialState, action) {
     switch(action.type) {
-        case SIGNUP_START: 
+        case LOGIN_START:
             return {
                 ...state,
                 isLoading: true
             }
-        case SIGNUP_SUCCESS:
+        case LOGIN_SUCCESS: 
             return {
                 ...state,
-                newUser: action.payload,
+                user: action.payload,
                 isLoading: false
             }
-        case SIGNUP_ERROR: 
+        case LOGIN_ERROR: 
             return {
                 ...state,
                 error: action.payload,
                 isLoading: false
             }
-        default:
+        default: 
             return state
     }
 }
