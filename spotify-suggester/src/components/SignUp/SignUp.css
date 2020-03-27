@@ -1,0 +1,39 @@
+.song-suggester-signup {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.song-suggester-signup input {
+  font-size: 14px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.song-suggester-signup button {
+  color: #ffffff;
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #92c959;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.song-suggester-signup-h2 {
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.signup > .container {
+  margin-top: 20px;
+  align-items: center;
+}
+
+.login-account-link {
+  text-decoration: none;
+  color: #92c959;
+}

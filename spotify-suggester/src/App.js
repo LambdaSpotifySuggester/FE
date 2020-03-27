@@ -1,10 +1,14 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import { Route } from "react-router-dom";
+import SignUp from "./components/SignUp/SignUp.js";
+import Login from "./components/Login/Login.js";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Spotify Suggester</h1>
+      <Route path="/signup" component={SignUp} />
+      <Route path="/login" component={Login} />
     </div>
   );
 }

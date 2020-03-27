@@ -9,6 +9,7 @@ import { signUpReducer } from './reducers/signUpReducer'
 import './index.css';
 import App from './App';
 
+
 const rootReducer = combineReducers({
   signUp: signUpReducer,
   login: loginReducer
@@ -24,6 +25,5 @@ ReactDOM.render(
       </Router>
     </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
-
